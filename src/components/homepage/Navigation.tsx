@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../app/images/icon2.png";
 import Image from "next/image";
 
 const Navigation = () => {
@@ -7,7 +6,13 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm border-b border-gray-100">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="flex items-center gap-3">
-          <Image src={logo} alt="Logo" className="h-12 w-12 rounded-lg" />
+          <img
+            src="/images/icon2.png"
+            alt="GCF Logo"
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
           <span className="text-xl font-semibold">GCash Flow</span>
         </div>
 
