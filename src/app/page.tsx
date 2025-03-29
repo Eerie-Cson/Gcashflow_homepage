@@ -19,7 +19,7 @@ const page = () => {
       <Features />
       <Scenario />
       <Cta style={primaryGradient} />
-      <Footer style={primaryGradient} />
+      <Footer />
     </div>
   );
 };
