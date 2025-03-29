@@ -2,7 +2,7 @@ import React from "react";
 
 const Cta = ({ style }: { style?: React.CSSProperties }) => {
   return (
-    <section className="py-16" style={style}>
+    <section className="py-16 bg-indigo-500">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">
           Ready to optimize your GCash business?

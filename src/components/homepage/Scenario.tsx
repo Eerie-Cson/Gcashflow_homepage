@@ -6,9 +6,9 @@ const Scenario = () => {
   return (
     <section
       id="scenarios"
-      className="py-20 bg-gradient-to-b from-blue-50 to-white"
+      className="py-20 bg-gradient-to-b from-white-50 to-indigo-500 relative overflow-hidden"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Transaction Scenarios
@@ -18,7 +18,7 @@ const Scenario = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden backdrop-blur-sm bg-opacity-90">
           <div className="border-b border-gray-200">
             <div className="flex">
               {[
@@ -234,40 +234,36 @@ const Scenario = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="bg-blue-50 p-6 rounded-xl">
-                  <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h4 className="font-medium mb-4">Example Transaction</h4>
-                    <div className="space-y-3">
-                      <div className="flex justify-between py-2 border-b border-gray-100">
-                        <span className="text-gray-600">
-                          Transaction Amount
-                        </span>
-                        <span className="font-medium">₱ 1,000.00</span>
-                      </div>
-                      <div className="flex justify-between py-2 border-b border-gray-100">
-                        <span className="text-gray-600">Profit (Fee)</span>
-                        <span className="font-medium text-green-600">
-                          ₱ 20.00
-                        </span>
-                      </div>
-                      <div className="flex justify-between py-2 border-b border-gray-100">
-                        <span className="text-gray-600">
-                          Customer Pays (GCash)
-                        </span>
-                        <span className="font-medium">₱ 1,000.00</span>
-                      </div>
-                      <div className="flex justify-between py-2 border-b border-gray-100">
-                        <span className="text-gray-600">
-                          Customer Pays (Profit in Cash)
-                        </span>
-                        <span className="font-medium">₱ 20.00</span>
-                      </div>
-                      <div className="flex justify-between py-2">
-                        <span className="text-gray-600">
-                          Customer Receives (Cash)
-                        </span>
-                        <span className="font-medium">₱ 1,000.00</span>
-                      </div>
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="font-medium mb-4">Example Transaction</h4>
+                  <div className="space-y-3">
+                    <div className="flex justify-between py-2 border-b border-gray-100">
+                      <span className="text-gray-600">Transaction Amount</span>
+                      <span className="font-medium">₱ 1,000.00</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-gray-100">
+                      <span className="text-gray-600">Profit (Fee)</span>
+                      <span className="font-medium text-green-600">
+                        ₱ 20.00
+                      </span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-gray-100">
+                      <span className="text-gray-600">
+                        Customer Pays (GCash)
+                      </span>
+                      <span className="font-medium">₱ 1,000.00</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-gray-100">
+                      <span className="text-gray-600">
+                        Customer Pays (Profit in Cash)
+                      </span>
+                      <span className="font-medium">₱ 20.00</span>
+                    </div>
+                    <div className="flex justify-between py-2">
+                      <span className="text-gray-600">
+                        Customer Receives (Cash)
+                      </span>
+                      <span className="font-medium">₱ 1,000.00</span>
                     </div>
                   </div>
                 </div>

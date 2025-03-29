@@ -3,12 +3,12 @@ import { ArrowRight } from "lucide-react";
 
 const Sections = () => {
   return (
-    <section className="pt-28 pb-20 overflow-hidden relative">
-      <div className="absolute inset-0 bg-blue-50 z-0"></div>
+    <section className="py-48 overflow-hidden relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white z-0"></div>
       <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-500 opacity-10 transform rotate-12 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-3/4 bg-indigo-500 opacity-10 transform -rotate-12 -translate-x-1/3"></div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-16 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
