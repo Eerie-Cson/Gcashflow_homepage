@@ -7,6 +7,11 @@ interface SignInButtonProps {
 export const SignInButton: React.FC<SignInButtonProps> = ({
   fullWidth = false,
 }) => {
+  console.log(
+    "NEXT_PUBLIC_DEMO_APP_URL:",
+    process.env.NEXT_PUBLIC_DEMO_APP_URL
+  );
+
   return (
     <Link href={`${process.env.NEXT_PUBLIC_DEMO_APP_URL}`}>
       <button
